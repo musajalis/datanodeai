@@ -88,11 +88,12 @@
 
         /* Hero Section */
         .hero {
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             position: relative;
             overflow: hidden;
+            padding: 8rem 0 4rem;
         }
 
         .hero-content {
@@ -161,10 +162,10 @@
             animation: float 3s ease-in-out infinite;
         }
 
-        .data-node:nth-child(1) { top: 20%; left: 20%; animation-delay: 0s; }
-        .data-node:nth-child(2) { top: 10%; right: 30%; animation-delay: 1s; }
-        .data-node:nth-child(3) { bottom: 20%; left: 10%; animation-delay: 2s; }
-        .data-node:nth-child(4) { bottom: 30%; right: 20%; animation-delay: 0.5s; }
+        .data-node:nth-child(1) { top: 25%; left: 20%; animation-delay: 0s; }
+        .data-node:nth-child(2) { top: 15%; right: 30%; animation-delay: 1s; }
+        .data-node:nth-child(3) { bottom: 25%; left: 10%; animation-delay: 2s; }
+        .data-node:nth-child(4) { bottom: 35%; right: 20%; animation-delay: 0.5s; }
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
@@ -367,6 +368,11 @@
                 display: none;
             }
 
+            .hero {
+                min-height: 100vh;
+                padding: 10rem 0 4rem;
+            }
+
             .hero-content {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -375,6 +381,22 @@
             .hero-text h1 {
                 font-size: 2.5rem;
             }
+
+            .hero-visual {
+                height: 300px;
+                margin-top: 2rem;
+            }
+
+            .data-node {
+                width: 60px;
+                height: 60px;
+                font-size: 0.9rem;
+            }
+
+            .data-node:nth-child(1) { top: 20%; left: 15%; }
+            .data-node:nth-child(2) { top: 20%; right: 15%; }
+            .data-node:nth-child(3) { bottom: 20%; left: 15%; }
+            .data-node:nth-child(4) { bottom: 20%; right: 15%; }
 
             .about-content {
                 grid-template-columns: 1fr;
@@ -515,16 +537,16 @@
                     </div>
                     <div class="stats">
                         <div class="stat">
-                            <span class="stat-number">1B+</span>
-                            <span class="stat-label">Hyperparameter AI/ML model</span>
+                            <span class="stat-number">10M+</span>
+                            <span class="stat-label">Data Points Processed</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">500+</span>
-                            <span class="stat-label">Cloud Service Connectors</span>
+                            <span class="stat-label">Happy Customers</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">270%</span>
-                            <span class="stat-label">Performance Increase</span>
+                            <span class="stat-number">250%</span>
+                            <span class="stat-label">Average ROI Increase</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">24/7</span>
@@ -541,8 +563,8 @@
                     <h2>Ready to Transform Your Marketing?</h2>
                     <p>Join thousands of businesses already using DataNode AI to unlock the power of their marketing data. Start your free trial today and experience the future of marketing intelligence.</p>
                     <div class="hero-buttons">
-                        <a href="mailto:musajalis@gmail.com" class="cta-button">Start Free Trial</a>
-                        <a href="mailto:musajalis@gmail.com" class="secondary-button">Contact Sales</a>
+                        <a href="mailto:hello@datanode.ai" class="cta-button">Start Free Trial</a>
+                        <a href="mailto:hello@datanode.ai" class="secondary-button">Contact Sales</a>
                     </div>
                 </div>
             </div>
@@ -557,7 +579,7 @@
                     <a href="#privacy">Privacy Policy</a>
                     <a href="#terms">Terms of Service</a>
                     <a href="#support">Support</a>
-                    <a href="mailto:musajalis@gmail.com">Contact</a>
+                    <a href="mailto:hello@datanode.ai">Contact</a>
                 </div>
                 <p>&copy; 2025 DataNode AI. All rights reserved.</p>
             </div>
@@ -669,4 +691,3 @@
     </script>
 </body>
 </html>
-
