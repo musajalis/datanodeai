@@ -19,7 +19,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataNode AI - Service Packages</title>
+    <title>DataNode AI - Products</title>
     <style>
         * {
             margin: 0;
@@ -441,7 +441,13 @@
                             <li>Identify market interests specific to your business</li>
                             <li>Basic performance reporting dashboard</li>
                         </ul>
-                        <a href="mailto:musajalis@datanodeai.com?subject=Standard Analytics Package Inquiry" class="package-button">Get Started</a>
+			<stripe-buy-button
+  			buy-button-id="buy_btn_1RaOPwP0KfLbasPBcyQ1vBCA"
+  			publishable-key="pk_live_51QyjNlP0KfLbasPBQGOHQuuzowxTgxVZrqhjnY95p8wcFd6Oi6LIUveqRcN93iWpoFyeXX8wHgAdLhU6wlX1kzdh00E9nLebiR"
+			>
+		        </stripe-buy-button>
+
+				<!--- <a href="mailto:musajalis@datanodeai.com?subject=Standard Analytics Package Inquiry" class="package-button">Get Started</a> --->
                     </div>
 
                     <!-- Advanced Package -->
@@ -466,7 +472,12 @@
                             <li>Predictive analytics and forecasting</li>
                             <li>Real-time AI monitoring and optimization</li>
                         </ul>
-                        <a href="mailto:musajalis@datanodeai.com?subject=Advanced Analytics Package Inquiry" class="package-button">Get Started</a>
+			<stripe-buy-button
+  			buy-button-id="buy_btn_1RaOiHP0KfLbasPBV9YM8QBf"
+  			publishable-key="pk_live_51QyjNlP0KfLbasPBQGOHQuuzowxTgxVZrqhjnY95p8wcFd6Oi6LIUveqRcN93iWpoFyeXX8wHgAdLhU6wlX1kzdh00E9nLebiR"
+			>
+			</stripe-buy-button>
+			<!--- <a href="mailto:musajalis@datanodeai.com?subject=Advanced Analytics Package Inquiry" class="package-button">Get Started</a> --->
                     </div>
 
                     <!-- AI Package -->
@@ -488,7 +499,12 @@
                             <li>Predictive analytics and forecasting</li>
                             <li>Real-time AI monitoring and optimization</li>
                         </ul>
-                        <a href="mailto:musajalis@datanodeai.com?subject=AI Marketing Data Pipeline Package Inquiry" class="package-button">Get Started</a>
+			<stripe-buy-button
+  			buy-button-id="buy_btn_1RaOm7P0KfLbasPBTibIhhWi"
+  			publishable-key="pk_live_51QyjNlP0KfLbasPBQGOHQuuzowxTgxVZrqhjnY95p8wcFd6Oi6LIUveqRcN93iWpoFyeXX8wHgAdLhU6wlX1kzdh00E9nLebiR"
+			>
+			</stripe-buy-button>
+			<!--- <a href="mailto:musajalis@datanodeai.com?subject=AI Marketing Data Pipeline Package Inquiry" class="package-button">Get Started</a> --->
                     </div>
                 </div>
             </div>
@@ -579,6 +595,8 @@
             card.style.transition = `all 0.6s ease ${index * 0.1}s`;
             observer.observe(card);
         });
+    </script>
+    <script async src="https://js.stripe.com/v3/buy-button.js">
     </script>
 </body>
 </html>
