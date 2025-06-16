@@ -113,7 +113,7 @@
 
         /* Packages Section */
         .packages {
-            padding: 10rem 0 6rem;
+            padding: 10rem 0 8rem;
             min-height: 100vh;
         }
 
@@ -224,12 +224,12 @@
             color: #b0b0b0;
             line-height: 1.6;
             margin-bottom: 2rem;
-            flex-grow: 1;
         }
 
         .package-features {
             list-style: none;
             margin-bottom: 2.5rem;
+            flex-grow: 1;
         }
 
         .package-features li {
@@ -282,6 +282,39 @@
         .package-card.ai .package-button {
             background: linear-gradient(45deg, #7c3aed, #00d4ff);
             box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+        }
+
+        /* Contact Sales Button Centering */
+        .contact-sales-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .contact-sales-button {
+            background: linear-gradient(45deg, #00d4ff, #7c3aed);
+            color: white !important;
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            z-index: 10;
+        }
+
+        .contact-sales-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.4);
         }
 
         /* Footer */
@@ -380,6 +413,11 @@
             .footer-content {
                 flex-direction: column;
                 text-align: center;
+            }
+
+            .contact-sales-button {
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
             }
         }
     </style>
@@ -507,6 +545,11 @@
 			<!--- <a href="mailto:musajalis@datanodeai.com?subject=AI Marketing Data Pipeline Package Inquiry" class="package-button">Get Started</a> --->
                     </div>
                 </div>
+                
+                <!-- Centered Contact Sales Button -->
+                <div class="contact-sales-container">
+                    <a href="mailto:musajalis@datanodeai.com" target="_blank" class="contact-sales-button">Contact Sales</a>
+                </div>
             </div>
         </section>
     </main>
@@ -595,6 +638,14 @@
             card.style.transition = `all 0.6s ease ${index * 0.1}s`;
             observer.observe(card);
         });
+
+        // Observe contact sales button for animation
+        const contactButton = document.querySelector('.contact-sales-button');
+        if (contactButton) {
+            // Make button visible immediately instead of animated
+            contactButton.style.opacity = '1';
+            contactButton.style.transform = 'translateY(0)';
+        }
     </script>
     <script async src="https://js.stripe.com/v3/buy-button.js">
     </script>
